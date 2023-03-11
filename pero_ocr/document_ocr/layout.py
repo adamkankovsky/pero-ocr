@@ -813,8 +813,8 @@ if __name__ == '__main__':
 
     def save():
         test_layout = PageLayout()
-        test_layout.from_pagexml('C:/Users/LachubCz_NTB/Documents/GitHub/pero-ocr/00cfab43-a5bc-4af0-b1c4-b26925679afd.xml')
-        test_layout.load_logits('C:/Users/LachubCz_NTB/Documents/GitHub/pero-ocr/00cfab43-a5bc-4af0-b1c4-b26925679afd.logits')
-        test_layout.to_altoxml("C:/Users/LachubCz_NTB/Documents/GitHub/pero-ocr/test_alto.xml")
+        test_layout.from_pagexml('C:/Users/LachubCz_NTB/Documents/GitHub/localPero/00cfab43-a5bc-4af0-b1c4-b26925679afd.xml')
+        test_layout.load_logits('C:/Users/LachubCz_NTB/Documents/GitHub/localPero/00cfab43-a5bc-4af0-b1c4-b26925679afd.logits')
+        test_layout.to_altoxml("C:/Users/LachubCz_NTB/Documents/GitHub/localPero/test_alto.xml")
 
     save()
