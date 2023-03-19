@@ -5,8 +5,10 @@
     are used by it.
 """
 
-import numpy as np
 import typing
+
+import numpy as np
+
 from pero_ocr.utils import jit
 
 

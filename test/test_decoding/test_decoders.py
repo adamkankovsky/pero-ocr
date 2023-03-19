@@ -4,15 +4,12 @@ import numpy as np
 import torch
 
 from pero_ocr.decoding.decoders import BLANK_SYMBOL
-from pero_ocr.decoding.decoders import find_new_prefixes
-
-from pero_ocr.decoding.decoders import GreedyDecoder
 from pero_ocr.decoding.decoders import CTCPrefixLogRawNumpyDecoder
+from pero_ocr.decoding.decoders import GreedyDecoder
+from pero_ocr.decoding.decoders import find_new_prefixes
 from pero_ocr.decoding.decoders import get_old_prefixes_positions, get_new_prefixes_positions
 from pero_ocr.decoding.decoders import update_lm_things
-
 from pero_ocr.decoding.lm_wrapper import HiddenState
-
 from .test_lm_wrapper import DummyLm
 
 

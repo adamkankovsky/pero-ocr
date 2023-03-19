@@ -1,28 +1,22 @@
 # -*- coding: utf-8 -*-
 
-import numpy as np
-import matplotlib
-# matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import lxml.etree as ET
-import skimage.draw
-import skimage.transform
-import skimage.measure
-import random
-import os
-import time
-import argparse
-import cv2
-from scipy import misc, ndimage
-import sys
-import math
-import re
-import pickle
-import imageio
 import json
+import math
+import os
+import re
+import sys
+
+import cv2
+import imageio
+# matplotlib.use('Agg')
+import lxml.etree as ET
+import matplotlib
+import numpy as np
+import skimage.draw
+import skimage.measure
+import skimage.transform
 
 from . import layout
-from . import parser_utils as parser
 
 
 def load_image(path):

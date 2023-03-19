@@ -2,14 +2,14 @@ import math
 import random
 import warnings
 
-import numpy as np
 import cv2
-from scipy import ndimage
-from scipy.spatial import Delaunay, distance
-from sklearn import cluster
+import numpy as np
 import shapely
 import shapely.geometry as sg
+from scipy import ndimage
+from scipy.spatial import Delaunay, distance
 from shapely.ops import cascaded_union, polygonize
+from sklearn import cluster
 
 from pero_ocr.document_ocr.layout import PageLayout, RegionLayout, TextLine
 

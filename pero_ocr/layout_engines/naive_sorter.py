@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import numpy as np
-
 from configparser import SectionProxy
-from sklearn.cluster import DBSCAN
 from typing import List
+
+import numpy as np
+from sklearn.cluster import DBSCAN
 
 from pero_ocr.document_ocr.layout import PageLayout, RegionLayout
 

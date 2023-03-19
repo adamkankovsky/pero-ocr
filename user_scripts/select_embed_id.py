@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import argparse
+import configparser
 import json
 import os
-import configparser
-import argparse
-import cv2
-
-import time
 import random
-import Levenshtein
-import numpy as np
-import lmdb
 import sys
-from sklearn.cluster import KMeans
+import time
 
+import Levenshtein
+import cv2
+import lmdb
+import numpy as np
 from safe_gpu import safe_gpu
+from sklearn.cluster import KMeans
 
 from pero_ocr.document_ocr.layout import PageLayout
 from pero_ocr.document_ocr.page_parser import PageParser

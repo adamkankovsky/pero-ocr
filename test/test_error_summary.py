@@ -1,4 +1,5 @@
 import unittest
+
 from pero_ocr.error_summary import ErrorsSummary
 
 

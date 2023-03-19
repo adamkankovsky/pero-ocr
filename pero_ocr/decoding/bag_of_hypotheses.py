@@ -1,5 +1,6 @@
-from collections import namedtuple
 import math
+from collections import namedtuple
+
 try:
     from scipy.misc import logsumexp
 except:

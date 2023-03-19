@@ -1,25 +1,24 @@
-import numpy as np
-
 import logging
-from multiprocessing import Pool
 import math
 import time
+from multiprocessing import Pool
 
+import numpy as np
 import torch.cuda
-from pero_ocr.utils import compose_path
-from .layout import PageLayout, RegionLayout, TextLine
+
 from pero_ocr.document_ocr import crop_engine as cropper
-from pero_ocr.ocr_engine.pytorch_ocr_engine import PytorchEngineLineOCR
-from pero_ocr.layout_engines.simple_region_engine import SimpleThresholdRegion
-from pero_ocr.layout_engines.simple_baseline_engine import EngineLineDetectorSimple
+from pero_ocr.layout_engines import layout_helpers as helpers
+from pero_ocr.layout_engines.baseline_refiner import refine_baseline
 from pero_ocr.layout_engines.cnn_layout_engine import LayoutEngine, LineFilterEngine
+from pero_ocr.layout_engines.line_in_region_detector import detect_lines_in_region
 from pero_ocr.layout_engines.line_postprocessing_engine import PostprocessingEngine
 from pero_ocr.layout_engines.naive_sorter import NaiveRegionSorter
+from pero_ocr.layout_engines.simple_baseline_engine import EngineLineDetectorSimple
+from pero_ocr.layout_engines.simple_region_engine import SimpleThresholdRegion
 from pero_ocr.layout_engines.smart_sorter import SmartRegionSorter
-from pero_ocr.layout_engines.line_in_region_detector import detect_lines_in_region
-from pero_ocr.layout_engines.baseline_refiner import refine_baseline
-from pero_ocr.layout_engines import layout_helpers as helpers
-
+from pero_ocr.ocr_engine.pytorch_ocr_engine import PytorchEngineLineOCR
+from pero_ocr.utils import compose_path
+from .layout import PageLayout, RegionLayout, TextLine
 
 logger = logging.getLogger(__name__)
 

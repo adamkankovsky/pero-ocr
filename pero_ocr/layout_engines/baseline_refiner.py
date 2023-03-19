@@ -1,6 +1,6 @@
 import numpy as np
-from scipy.ndimage import measurements
 from scipy import interpolate
+from scipy.ndimage import measurements
 
 from pero_ocr.layout_engines import layout_helpers as helpers
 

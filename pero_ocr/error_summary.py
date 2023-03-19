@@ -1,8 +1,9 @@
 import math
-from pero_ocr.sequence_alignment import levenshtein_distance
-from pero_ocr.sequence_alignment import levenshtein_alignment, edit_stats_for_alignment
-from enum import Enum
 from collections import defaultdict, Counter
+from enum import Enum
+
+from pero_ocr.sequence_alignment import levenshtein_alignment, edit_stats_for_alignment
+from pero_ocr.sequence_alignment import levenshtein_distance
 
 MatchTypes = Enum('MatchTypes', 'C S I D')
 

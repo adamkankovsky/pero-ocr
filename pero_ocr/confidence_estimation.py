@@ -1,6 +1,7 @@
+import typing
+
 import numpy as np
 from scipy.special import logsumexp
-import typing
 
 from pero_ocr.force_alignment import align_text
 

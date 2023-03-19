@@ -1,5 +1,5 @@
-import numpy as np
 import cv2
+import numpy as np
 from scipy import signal
 
 from pero_ocr.layout_engines import layout_helpers as helpers

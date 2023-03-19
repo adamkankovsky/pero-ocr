@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import numpy as np
-import os
-import configparser
 import argparse
-import cv2
+import configparser
 import logging
 import logging.handlers
+import os
 import re
-from typing import Set, List, Optional
-import traceback
 import sys
 import time
+import traceback
 from multiprocessing import Pool
+from typing import Set, List, Optional
 
+import cv2
+import numpy as np
 import torch
 from safe_gpu import safe_gpu
 

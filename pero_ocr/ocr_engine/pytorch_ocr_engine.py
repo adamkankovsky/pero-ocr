@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 
+import sys
+from functools import partial
+
+import numpy as np
 import torch
 from torch import nn
-import numpy as np
-from functools import partial
+
 from .line_ocr_engine import BaseEngineLineOCR
-import sys
 
 
 # scores_probs should be N,C,T, blank is last class

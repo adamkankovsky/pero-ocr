@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
 import argparse
-import Levenshtein
+import os
 import sys
+
+import Levenshtein
 
 from pero_ocr.document_ocr.layout import PageLayout
 

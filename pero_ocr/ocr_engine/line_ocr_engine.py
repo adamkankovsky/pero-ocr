@@ -3,9 +3,10 @@ from __future__ import print_function
 
 import argparse
 import json
+from os.path import isabs, realpath, join, dirname
+
 import cv2
 import numpy as np
-from os.path import isabs, realpath, join, dirname
 from scipy import sparse
 
 from .softmax import softmax

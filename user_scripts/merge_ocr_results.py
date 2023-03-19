@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import numpy as np
-import os
 import argparse
-import traceback
+import os
 import sys
+import traceback
 
-from pero_ocr.document_ocr.layout import PageLayout
+import numpy as np
+
 from pero_ocr.confidence_estimation import get_line_confidence
 from pero_ocr.document_ocr.arabic_helper import ArabicHelper
+from pero_ocr.document_ocr.layout import PageLayout
 
 
 def parse_arguments():

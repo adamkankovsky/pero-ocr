@@ -1,7 +1,7 @@
 import unittest
-import numpy as np
-
 from collections import Counter
+
+import numpy as np
 
 from pero_ocr.decoding.multisort import top_k
 

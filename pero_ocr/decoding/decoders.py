@@ -1,11 +1,10 @@
 import itertools
+
 import numpy as np
 
 from .bag_of_hypotheses import BagOfHypotheses, logsumexp
-from .multisort import top_k
-
 from .lm_wrapper import LMWrapper, HiddenState
-
+from .multisort import top_k
 
 BLANK_SYMBOL = '<BLANK>'
 

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
-import cv2
 import math
-import numpy as np
-
 from configparser import SectionProxy
 from copy import deepcopy
 from itertools import tee
-from shapely import geometry, affinity
 from typing import List, Dict, Union, Optional
+
+import cv2
+import numpy as np
+from shapely import geometry, affinity
 
 from pero_ocr.document_ocr.layout import PageLayout, RegionLayout
 

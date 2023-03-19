@@ -1,7 +1,8 @@
-import unittest
-import torch
-import numpy as np
 import os
+import unittest
+
+import numpy as np
+import torch
 
 from pero_ocr.decoding.lm_wrapper import LMWrapper, HiddenState
 

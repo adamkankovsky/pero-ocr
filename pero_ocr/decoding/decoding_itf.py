@@ -4,9 +4,8 @@ import sys
 import time
 
 import torch
-from torch.nn import functional as F
-
 from brnolm.language_models import language_model
+from torch.nn import functional as F
 
 from pero_ocr.utils import compose_path
 from .decoders import GreedyDecoder, CTCPrefixLogRawNumpyDecoder, BLANK_SYMBOL

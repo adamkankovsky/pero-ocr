@@ -1,6 +1,6 @@
-from os.path import isabs, join
-import sys
 import subprocess
+import sys
+from os.path import isabs, join
 
 try:
     subprocess.check_output(

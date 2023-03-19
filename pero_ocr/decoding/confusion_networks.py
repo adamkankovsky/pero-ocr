@@ -1,5 +1,6 @@
-from pero_ocr.sequence_alignment import levenshtein_alignment_path
 import math
+
+from pero_ocr.sequence_alignment import levenshtein_alignment_path
 
 
 def get_pivot(cn):

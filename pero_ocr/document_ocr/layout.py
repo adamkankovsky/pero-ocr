@@ -1,20 +1,20 @@
-import sys
-import re
-import pickle
 import json
-from io import BytesIO
+import pickle
+import re
+import sys
 from datetime import datetime, timezone
 from enum import Enum
+from io import BytesIO
 
-import numpy as np
-import lxml.etree as ET
 import cv2
+import lxml.etree as ET
+import numpy as np
 import shapely
 
-from pero_ocr.document_ocr.crop_engine import EngineLineCropper
-from pero_ocr.force_alignment import align_text
 from pero_ocr.confidence_estimation import get_line_confidence
 from pero_ocr.document_ocr.arabic_helper import ArabicHelper
+from pero_ocr.document_ocr.crop_engine import EngineLineCropper
+from pero_ocr.force_alignment import align_text
 
 
 class PAGEVersion(Enum):

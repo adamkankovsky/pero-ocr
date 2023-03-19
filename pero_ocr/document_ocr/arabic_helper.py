@@ -1,8 +1,9 @@
-import unittest
 import re
-import arabic_reshaper
 import string
 import sys
+import unittest
+
+import arabic_reshaper
 
 
 class ArabicHelper:

@@ -1,7 +1,8 @@
-import numpy as np
-import cv2
-import shapely
 import sys
+
+import cv2
+import numpy as np
+import shapely
 from scipy import ndimage
 from scipy import signal
 from scipy.ndimage.morphology import binary_erosion

@@ -1,13 +1,13 @@
-import numpy as np
-from copy import deepcopy
 import time
+from copy import deepcopy
 
 import cv2
+import numpy as np
+import shapely.geometry as sg
+import skimage.draw
 from scipy import ndimage
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import connected_components
-import skimage.draw
-import shapely.geometry as sg
 
 from pero_ocr.layout_engines import layout_helpers as helpers
 from pero_ocr.layout_engines.torch_parsenet import TorchParseNet, TorchOrientationNet
