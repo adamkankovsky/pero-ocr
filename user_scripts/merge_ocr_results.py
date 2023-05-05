@@ -8,9 +8,8 @@ import traceback
 
 import numpy as np
 
-from pero_ocr.confidence_estimation import get_line_confidence
-from pero_ocr.document_ocr.arabic_helper import ArabicHelper
-from pero_ocr.document_ocr.layout import PageLayout
+from pero_ocr import get_line_confidence
+from pero_ocr import PageLayout
 
 
 def parse_arguments():

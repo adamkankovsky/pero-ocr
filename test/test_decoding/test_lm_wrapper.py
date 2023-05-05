@@ -4,7 +4,7 @@ import unittest
 import numpy as np
 import torch
 
-from pero_ocr.decoding.lm_wrapper import LMWrapper, HiddenState
+from pero_ocr.decoding import LMWrapper, HiddenState
 
 
 class DummyModel(torch.nn.Module):

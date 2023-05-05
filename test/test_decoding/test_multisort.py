@@ -3,7 +3,7 @@ from collections import Counter
 
 import numpy as np
 
-from pero_ocr.decoding.multisort import top_k
+from pero_ocr.decoding import top_k
 
 
 class MultisortTests(unittest.TestCase):

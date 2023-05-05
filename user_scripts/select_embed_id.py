@@ -15,7 +15,7 @@ import numpy as np
 from safe_gpu import safe_gpu
 from sklearn.cluster import KMeans
 
-from pero_ocr.document_ocr.layout import PageLayout
+from pero_ocr import PageLayout
 from pero_ocr.document_ocr.page_parser import PageParser
 from pero_ocr.utils import compose_path
 
